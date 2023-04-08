@@ -310,7 +310,9 @@ int main() {
 
 		displayMessage("Columns Created");
 		writeLineNew("Table Updated");
-		displayMessage("Columns Summary");
+		writeLineNew("+----------------------------------------------+");
+		cout << "                     " << tableName << endl;
+		writeLineNew("+----------------------------------------------+");
 		makeSpace(1);
 		for (int i = 0; i < columns.size(); i++) {
 			cout << columns[i] << " | ";
